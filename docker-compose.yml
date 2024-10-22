@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  mocks:
+    build:
+      context: . 
+      dockerfile: mocks/Dockerfile  
+    ports:
+      - "3100:3100"
+    environment:
+      NODE_ENV: development
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mocks
+    environment:
+      NODE_ENV: development
+    volumes:
+      - .:/app
+      - /app/node_modules
