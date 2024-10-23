@@ -25,10 +25,23 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/[name][ext][query]',
+                },
+            },
         ],
     },
     devServer: {
-        static: path.resolve(__dirname, '../public'),
+        static: {
+            directory: path.join(__dirname, 'public'),
+        },
         port: 3000,
         historyApiFallback: true,
     },

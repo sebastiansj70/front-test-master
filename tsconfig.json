@@ -7,7 +7,12 @@
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "types": ["node"],
     },
     "include": [
         "src/**/*"

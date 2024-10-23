@@ -1,0 +1,45 @@
+.action-buttons-content {
+    display: none;
+    height: 3rem;
+    align-items: center;
+}
+
+@media (max-width: 640px) {
+    .action-buttons-content {
+        display: flex;
+    }
+}
+
+.action-buttons-like-wrapper,
+.action-buttons-reset-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #f1f1f1;
+    gap: 0.5rem;
+}
+
+.action-buttons-like-wrapper {
+    border-right: 1px solid #f1f1f1;
+    flex-direction: row-reverse;
+}
+
+.action-buttons-reset-wrapper {
+    flex-direction: row;
+
+}
+
+.action-buttons-like-button,
+.action-buttons-reset-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.action-buttons-counter {
+    font-size: 14px;
+    color: #575454;
+}
