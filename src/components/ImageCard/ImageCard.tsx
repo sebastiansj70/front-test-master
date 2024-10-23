@@ -59,7 +59,8 @@ const ImageCard: React.FC<ImageCardProps> = ({ id, imageUrl, title, price, autho
 
                     <div className="action-buttons">
                         <div className="button-wrapper">
-                            <button className="like-button" onClick={handleLikeClick}>
+                            <button className="like-button" onClick={handleLikeClick}
+                                data-testid="like-button">
                                 <i
                                     className={`fa-heart ${isliked ? 'fas' : 'far'}`}
                                     style={{
@@ -72,7 +73,8 @@ const ImageCard: React.FC<ImageCardProps> = ({ id, imageUrl, title, price, autho
                         </div>
 
                         <div className="button-wrapper">
-                            <button className="reset-button" onClick={handleResetClick}>
+                            <button className="reset-button" onClick={handleResetClick}
+                            data-testid="reset-button">
                                 <i
                                     className="fas fa-arrow-rotate-left"
                                     style={{
