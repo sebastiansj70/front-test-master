@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                     type="text"
                     value={searchQuery}
                     onChange={handleInputChange}
-                    placeholder="Search by name or author..."
+                    placeholder="You're looking for something?"
                 />
             </div>
         </header>
