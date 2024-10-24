@@ -9,7 +9,7 @@ export const fetchImages = async (): Promise<Image[]> => {
         return response.data;
     } catch (error) {
         console.error('Error fetching images', error)
-        throw error
+        throw new Error('Error fetching images');
     }
 }
 
@@ -22,6 +22,6 @@ export const likeImage = async (id: number) => {
         console.log('====================================');
     } catch (error) {
         console.error('Error liking image', error);
-        throw error;
+        throw new Error('Error liking image');
     }
 }
