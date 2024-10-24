@@ -71,3 +71,48 @@ Si no dispones de photoshop puedes usar [photopea](https://www.photopea.com/).
 - HTML y estilos responsive a partir de los PSDs: mobile para móviles y web para Desktop.
 
 Se valorarán el uso e implementación de tests.
+
+# Solucion
+
+## Cambios Realizados
+
+Por problemas al buscar una biblioteca de iconos gratuita, se decidió reemplazar los iconos originales por una alternativa utilizando **Font Awesome**. Esto asegura que los iconos se mantengan consistentes y no impacten la experiencia del usuario.  
+Si necesitas usar otros iconos más adelante, puedes integrar nuevas bibliotecas fácilmente.
+
+##  Levantar el Proyecto
+
+Sigue estos pasos para iniciar tanto la aplicación como la API mock:
+
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/sebastiansj70/front-test-master.git
+   cd front-test-master
+   ```
+
+2. **Instala las dependencias**:
+   ```bash
+   npm install
+   ```
+3. **Inicia la aplicacion**:
+    ```bash
+    docker-compose up --build
+    ```
+    esto inicia la API mock disponible en `http://localhost:3100`.
+    y la aplicacion estará disponible en `http://localhost:3000`.
+
+---
+
+## Pruebas
+### Ejecución de tests:
+1. **Levantar todos los tests**:
+   ```bash
+   npm test
+   ```
+---
+
+- La estructura del proyecto sigue **buenas prácticas de desarrollo** con componentes reutilizables y separación clara entre lógica y presentación.
+
+
+## Conclusión
+
+Con este proyecto se espera mostrar imágenes con scroll infinito, permitir búsquedas y realizar acciones de like/unlike. El diseño está adaptado para dispositivos móviles y pantallas grandes, garantizando una **experiencia fluida y responsive**.
