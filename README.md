@@ -95,7 +95,7 @@ Sigue estos pasos para iniciar tanto la aplicación como la API mock:
    ```
 3. **Inicia la aplicacion**:
     ```bash
-    docker-compose up --build
+    docker-compose up
     ```
     esto inicia la API mock disponible en `http://localhost:3100`.
     y la aplicacion estará disponible en `http://localhost:3000`.
