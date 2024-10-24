@@ -6,7 +6,7 @@
     "scripts": {
         "start": "webpack serve --config configs/webpack.config.js --mode development",
         "build": "webpack --config configs/webpack.config.js --mode production",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "jest",
         "mocks": "mocks-server"
     },
     "author": "",

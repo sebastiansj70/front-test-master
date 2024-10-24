@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             setImages(data)
             setFilteredImages(data);
         } catch (error: any) {
-            seterror(error)
+            seterror(error.message);
         } finally {
             setLoading(false)
         }
